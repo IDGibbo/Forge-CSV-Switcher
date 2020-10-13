@@ -4,7 +4,6 @@ import io.github.idgibbo.EnumForgeVersion;
 import io.github.idgibbo.Main;
 import io.github.idgibbo.ThreadReplaceCSV;
 import io.github.idgibbo.utils.JavaUtils;
-
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
@@ -107,7 +106,7 @@ public class PanelMain extends JPanel{
 		add(lblModToApply);
 
 		btnSelectMod = new JButton("Select Mod");
-		final PanelMain stupidWorkaroundCauseJava = this;
+		final PanelMain thisPanel = this;
 		btnSelectMod.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				JFileChooser fileChooser = new JFileChooser(Main.FILE_MAIN);
@@ -117,7 +116,7 @@ public class PanelMain extends JPanel{
 				fileChooser.setAcceptAllFileFilterUsed(false);
 				fileChooser.setMultiSelectionEnabled(false);
 
-				fileChooser.showOpenDialog(stupidWorkaroundCauseJava);
+				fileChooser.showOpenDialog(thisPanel);
 				selectedFile = fileChooser.getSelectedFile();
 				updateGoButton();
 			}

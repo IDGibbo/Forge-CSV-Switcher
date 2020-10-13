@@ -3,7 +3,6 @@ package io.github.idgibbo.utils;
 import java.awt.Component;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-
 import javax.swing.JOptionPane;
 
 public class JavaUtils {

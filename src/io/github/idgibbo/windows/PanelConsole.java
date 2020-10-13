@@ -38,13 +38,14 @@ public class PanelConsole extends WindowAdapter implements WindowListener,  Acti
 		int y=(int)(frameSize.height/2);
 		frame.setBounds(x,y,frameSize.width,frameSize.height);
 		textArea=new JTextArea();
+		textArea.setFont(new Font("", Font.PLAIN, 12)); // TODO Fork
 		textArea.setEditable(false);
 		
-		//auto scrolling
+		// auto scrolling
 		DefaultCaret caret = (DefaultCaret)textArea.getCaret();
 		caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 		
-		JButton button=new JButton("Clear Text");
+		JButton button=new JButton("Clear Console"); // TODO Fork
 
 		frame.getContentPane().setLayout(new BorderLayout());
 		frame.getContentPane().add(new JScrollPane(textArea),BorderLayout.CENTER);
@@ -85,11 +86,9 @@ public class PanelConsole extends WindowAdapter implements WindowListener,  Acti
 		quit=false; // signals the Threads that they should exit
 
 		// Starting two separate threads to read from the PipedInputStreams
-		//
 		reader=new Thread(this);
 		reader.setDaemon(true);
 		reader.start();
-		//
 		reader2=new Thread(this);
 		reader2.setDaemon(true);
 		reader2.start();

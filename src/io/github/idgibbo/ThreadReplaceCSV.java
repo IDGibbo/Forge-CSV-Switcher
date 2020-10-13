@@ -4,7 +4,6 @@ import io.github.idgibbo.utils.FernFlowerUtils;
 import io.github.idgibbo.utils.FileUtils;
 import io.github.idgibbo.utils.JavaUtils;
 import io.github.idgibbo.windows.PanelMain;
-
 import java.io.File;
 import java.util.ArrayList;
 

@@ -20,10 +20,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/Fernflower.jar" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Program Files" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="Start" type="Application" factoryName="Application">
@@ -67,26 +67,26 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="551" y="171" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1440.920@0.0.1440.920" timestamp="1602589690727" />
-    <state x="500" y="215" key="FileChooserDialogImpl" timestamp="1602589689409">
+    <state x="500" y="215" key="FileChooserDialogImpl" timestamp="1602604649232">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="500" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1602589689409" />
-    <state width="1397" height="300" key="GridCell.Tab.0.bottom" timestamp="1602593356954">
+    <state x="500" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1602604649232" />
+    <state width="698" height="239" key="GridCell.Tab.0.bottom" timestamp="1602605168528">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="300" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1602593356954" />
-    <state width="1397" height="300" key="GridCell.Tab.0.center" timestamp="1602593356954">
+    <state width="698" height="239" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1602605168528" />
+    <state width="698" height="239" key="GridCell.Tab.0.center" timestamp="1602605168526">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="300" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1602593356954" />
-    <state width="1397" height="300" key="GridCell.Tab.0.left" timestamp="1602593356954">
+    <state width="698" height="239" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1602605168526" />
+    <state width="698" height="239" key="GridCell.Tab.0.left" timestamp="1602605168526">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="300" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1602593356954" />
-    <state width="1397" height="300" key="GridCell.Tab.0.right" timestamp="1602593356954">
+    <state width="698" height="239" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1602605168526" />
+    <state width="698" height="239" key="GridCell.Tab.0.right" timestamp="1602605168526">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="300" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1602593356954" />
+    <state width="698" height="239" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1602605168526" />
     <state width="1397" height="300" key="GridCell.Tab.1.bottom" timestamp="1602593356954">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -103,13 +103,13 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="1397" height="300" key="GridCell.Tab.1.right/0.0.1440.920@0.0.1440.920" timestamp="1602593356954" />
-    <state x="201" y="35" key="SettingsEditor" timestamp="1602589694986">
+    <state x="201" y="35" key="SettingsEditor" timestamp="1602604668872">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="201" y="35" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1602589694986" />
-    <state x="430" y="193" width="579" height="534" key="find.popup" timestamp="1602591201824">
+    <state x="201" y="35" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1602604668872" />
+    <state x="430" y="193" width="579" height="534" key="find.popup" timestamp="1602605294937">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="430" y="193" width="579" height="534" key="find.popup/0.0.1440.920@0.0.1440.920" timestamp="1602591201824" />
+    <state x="430" y="193" width="579" height="534" key="find.popup/0.0.1440.920@0.0.1440.920" timestamp="1602605294937" />
   </component>
 </project>

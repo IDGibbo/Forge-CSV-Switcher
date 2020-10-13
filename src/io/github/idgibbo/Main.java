@@ -4,9 +4,12 @@ import io.github.idgibbo.utils.JavaUtils;
 import io.github.idgibbo.windows.PanelConsole;
 import io.github.idgibbo.windows.PanelMain;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.lang.reflect.Method;
 import java.nio.file.Paths;
 
 public class Main {
@@ -30,6 +33,45 @@ public class Main {
 		// Gives the systems theme TODO Fork
 		try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); }
 		catch (Exception e) { e.printStackTrace(); }
+
+		// Fixes Option Pane Crop (Windows 8/10) TODO Fork
+		try
+		{
+			String[][] icons =
+					{
+							{"OptionPane.warningIcon",     "65581"},
+							{"OptionPane.questionIcon",    "65583"},
+							{"OptionPane.errorIcon",       "65585"},
+							{"OptionPane.informationIcon", "65587"}
+					};
+			//obtain a method for creating proper icons
+			Method getIconBits = Class.forName("sun.awt.shell.Win32ShellFolder2").getDeclaredMethod("getIconBits", new Class[]{long.class, int.class});
+			getIconBits.setAccessible(true);
+			//calculate scaling factor
+			double dpiScalingFactor = Toolkit.getDefaultToolkit().getScreenResolution() / 96.0;
+			int icon32Size = (dpiScalingFactor == 1)?(32):((dpiScalingFactor == 1.25)?(40):((dpiScalingFactor == 1.5)?(45):((int) (32 * dpiScalingFactor))));
+			Object[] arguments = {null, icon32Size};
+			for (String[] s:icons)
+			{
+				if (UIManager.get(s[0]) instanceof ImageIcon)
+				{
+					arguments[0] = Long.valueOf(s[1]);
+					//this method is static, so the first argument can be null
+					int[] iconBits = (int[]) getIconBits.invoke(null, arguments);
+					if (iconBits != null)
+					{
+						//create an image from the obtained array
+						BufferedImage img = new BufferedImage(icon32Size, icon32Size, BufferedImage.TYPE_INT_ARGB);
+						img.setRGB(0, 0, icon32Size, icon32Size, iconBits, 0, icon32Size);
+						ImageIcon newIcon = new ImageIcon(img);
+						//override previous icon with the new one
+						UIManager.put(s[0], newIcon);
+					}
+				}
+			}
+		}
+		catch (Exception e)
+		{ e.printStackTrace(); }
 		
 		// Folder stuff
 		FILE_CODE.mkdir();
@@ -61,7 +103,7 @@ public class Main {
 			public void actionPerformed(ActionEvent arg0) {
 				JavaUtils.dialog(
 						PROGRAM_NAME + " " + PROGRAM_VERSION + "\n" +
-				"By: Eric Golde & Isaac Gibson",
+				"By: Eric Golde & Isaac Gibson", // TODO Fork
 						frame, "About", JavaUtils.MessageLogo.NONE);
 			}
         	
@@ -91,16 +133,13 @@ public class Main {
         	
         });
         menu1.add(menuItemExit);
-        
         menubar.add(menu1);
-        
         frame.addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
                 quit();
             }
         });
-        
         frame.setVisible(true);
 	}
 	
