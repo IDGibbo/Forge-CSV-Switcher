@@ -1,19 +1,14 @@
 package io.github.idgibbo.utils;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
+import com.opencsv.CSVReader;
+
+import java.io.*;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
-
-import com.opencsv.CSVReader;
 
 public class FileUtils {
 
@@ -44,15 +39,15 @@ public class FileUtils {
 
 		try{
 
-			//create output directory is not exists
+			// create output directory is not exists
 			File folder = new File(outputFolder);
 			if(!folder.exists()){
 				folder.mkdir();
 			}
 
-			//get the zip file content
+			// get the zip file content
 			ZipInputStream zis = new ZipInputStream(new FileInputStream(zipFile));
-			//get the zipped file list entry
+			// get the zipped file list entry
 			ZipEntry ze = zis.getNextEntry();
 
 			while(ze!=null){
@@ -60,8 +55,8 @@ public class FileUtils {
 				if (! fileName.endsWith("/")) {
 					File newFile = new File(outputFolder + File.separator + fileName);
 
-					//create all non exists folders
-					//else you will hit FileNotFoundException for compressed folder
+					/** create all non exists folders
+					else you will hit FileNotFoundException for compressed folder **/
 					new File(newFile.getParent()).mkdirs();
 
 					FileOutputStream fos = new FileOutputStream(newFile);

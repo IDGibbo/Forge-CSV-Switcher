@@ -1,10 +1,16 @@
 package io.github.idgibbo.windows;
 
-import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.text.DefaultCaret;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowListener;
+import java.io.IOException;
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
+import java.io.PrintStream;
 
 public class PanelConsole extends WindowAdapter implements WindowListener,  ActionListener, Runnable
 {
@@ -21,21 +27,24 @@ public class PanelConsole extends WindowAdapter implements WindowListener,  Acti
 
 	public PanelConsole()
 	{
+		// Gives the default Windows theme TODO Fork
+		try { UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); }
+		catch (Exception e) { e.printStackTrace(); }
+
 		// create all components and add them
-		frame=new JFrame("Console");
+		frame=new JFrame("Output Console");
 		Dimension frameSize=new Dimension(400, 300);
 		int x=(int)(frameSize.width/2);
 		int y=(int)(frameSize.height/2);
 		frame.setBounds(x,y,frameSize.width,frameSize.height);
-
 		textArea=new JTextArea();
-		textArea.setEditable(false);
+		textArea.setEditable(true); // TODO Fork
 		
 		//auto scrolling
 		DefaultCaret caret = (DefaultCaret)textArea.getCaret();
 		caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 		
-		JButton button=new JButton("clear");
+		JButton button=new JButton("Clear Text");
 
 		frame.getContentPane().setLayout(new BorderLayout());
 		frame.getContentPane().add(new JScrollPane(textArea),BorderLayout.CENTER);

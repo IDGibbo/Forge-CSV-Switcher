@@ -1,27 +1,19 @@
 package io.github.idgibbo.windows;
 
+import io.github.idgibbo.EnumForgeVersion;
+import io.github.idgibbo.Main;
+import io.github.idgibbo.ThreadReplaceCSV;
+import io.github.idgibbo.utils.JavaUtils;
+
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.File;
 
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JProgressBar;
-import javax.swing.JTextField;
-import javax.swing.filechooser.FileNameExtensionFilter;
-
-import io.github.idgibbo.EnumForgeVersion;
-import io.github.idgibbo.Main;
-import io.github.idgibbo.ThreadReplaceCSV;
-import io.github.idgibbo.utils.JavaUtils;
-
-@SuppressWarnings({"serial", "rawtypes", "unchecked"}) //Ugg java D:
+@SuppressWarnings({"serial", "rawtypes", "unchecked"})
 public class PanelMain extends JPanel{
 
 	private EnumForgeVersion selectedForgeVersion = EnumForgeVersion.v1_7_10;
@@ -125,7 +117,6 @@ public class PanelMain extends JPanel{
 				fileChooser.setAcceptAllFileFilterUsed(false);
 				fileChooser.setMultiSelectionEnabled(false);
 
-				//
 				fileChooser.showOpenDialog(stupidWorkaroundCauseJava);
 				selectedFile = fileChooser.getSelectedFile();
 				updateGoButton();
@@ -137,7 +128,7 @@ public class PanelMain extends JPanel{
 		add(btnSelectMod);
 		
 		progressBar = new JProgressBar();
-		progressBar.setBounds(12, 216, 376, 14);
+		progressBar.setBounds(3, 216, 376, 14);
 		add(progressBar);
 
 	}

@@ -1,12 +1,12 @@
 package io.github.idgibbo;
 
-import java.io.File;
-import java.util.ArrayList;
-
 import io.github.idgibbo.utils.FernFlowerUtils;
 import io.github.idgibbo.utils.FileUtils;
 import io.github.idgibbo.utils.JavaUtils;
 import io.github.idgibbo.windows.PanelMain;
+
+import java.io.File;
+import java.util.ArrayList;
 
 public class ThreadReplaceCSV extends Thread{
 
@@ -50,7 +50,7 @@ public class ThreadReplaceCSV extends Thread{
 		updateProgress(0.1);
 
 		try {
-			//Delete existing code directory files
+			// Delete existing code directory files
 			log("Deleting code directory...");
 			FileUtils.deleteDirectory(Main.FILE_CODE);
 
@@ -79,7 +79,7 @@ public class ThreadReplaceCSV extends Thread{
 			return;
 		}
 		updateProgress(1.0);
-		//End
+		// End
 		JavaUtils.successMessage("Successfully decompiled mod in " + elapsedTime(startTime) + " seconds!", panelMain);
 		reset();
 	}
