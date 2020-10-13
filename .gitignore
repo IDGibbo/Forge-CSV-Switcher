@@ -50,3 +50,6 @@ local.properties
 data/
 code/
 test/
+
+# Intelij Specific
+*.iml
