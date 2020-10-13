@@ -1,4 +1,4 @@
-package org.golde.java.rmwfcsvmg;
+package io.github.idgibbo;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,9 +10,9 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
-import org.golde.java.rmwfcsvmg.utils.JavaUtils;
-import org.golde.java.rmwfcsvmg.windows.PanelConsole;
-import org.golde.java.rmwfcsvmg.windows.PanelMain;
+import io.github.idgibbo.utils.JavaUtils;
+import io.github.idgibbo.windows.PanelConsole;
+import io.github.idgibbo.windows.PanelMain;
 
 public class Main {
 

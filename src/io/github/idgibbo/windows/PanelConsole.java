@@ -1,4 +1,4 @@
-package org.golde.java.rmwfcsvmg.windows;
+package io.github.idgibbo.windows;
 
 import java.io.*;
 import java.awt.*;

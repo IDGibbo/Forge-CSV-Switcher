@@ -1,4 +1,4 @@
-package org.golde.java.rmwfcsvmg;
+package io.github.idgibbo;
 
 import java.io.File;
 

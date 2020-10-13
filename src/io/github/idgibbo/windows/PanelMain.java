@@ -1,4 +1,4 @@
-package org.golde.java.rmwfcsvmg.windows;
+package io.github.idgibbo.windows;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,10 +16,10 @@ import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import org.golde.java.rmwfcsvmg.EnumForgeVersion;
-import org.golde.java.rmwfcsvmg.Main;
-import org.golde.java.rmwfcsvmg.ThreadReplaceCSV;
-import org.golde.java.rmwfcsvmg.utils.JavaUtils;
+import io.github.idgibbo.EnumForgeVersion;
+import io.github.idgibbo.Main;
+import io.github.idgibbo.ThreadReplaceCSV;
+import io.github.idgibbo.utils.JavaUtils;
 
 @SuppressWarnings({"serial", "rawtypes", "unchecked"}) //Ugg java D:
 public class PanelMain extends JPanel{

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b1e7a55-f0fb-403a-bbe7-1291573b4e61" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iom4lOpiL4p7150dqUEpbOgGpJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Start" type="JarApplication">
+      <option name="WORKING_DIRECTORY" value="C:\Users\Isaac's Surface Go\Documents\GitHub\ReplaceModsWithForgeCSVMappingsGUI" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="ReplaceModsWithForgeCSVMappingsGUI" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="ReplaceModsWithForgeCSVMappingsGUI" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b1e7a55-f0fb-403a-bbe7-1291573b4e61" name="Default Changelist" comment="" />
+      <created>1602582137544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602582137544</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="201" y="35" key="#Project_Structure" timestamp="1602582171341">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="201" y="35" key="#Project_Structure/0.0.1440.920@0.0.1440.920" timestamp="1602582171341" />
+    <state x="175" y="115" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602582352244">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="175" y="115" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1602582352244" />
+    <state x="500" y="215" key="FileChooserDialogImpl" timestamp="1602582280207">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="500" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1602582280207" />
+  </component>
+</project>

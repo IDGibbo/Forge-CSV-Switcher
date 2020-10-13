@@ -1,4 +1,4 @@
-package org.golde.java.rmwfcsvmg.utils;
+package io.github.idgibbo.utils;
 
 import java.awt.Component;
 import java.io.PrintWriter;

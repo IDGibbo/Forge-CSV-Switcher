@@ -1,12 +1,12 @@
-package org.golde.java.rmwfcsvmg;
+package io.github.idgibbo;
 
 import java.io.File;
 import java.util.ArrayList;
 
-import org.golde.java.rmwfcsvmg.utils.FernFlowerUtils;
-import org.golde.java.rmwfcsvmg.utils.FileUtils;
-import org.golde.java.rmwfcsvmg.utils.JavaUtils;
-import org.golde.java.rmwfcsvmg.windows.PanelMain;
+import io.github.idgibbo.utils.FernFlowerUtils;
+import io.github.idgibbo.utils.FileUtils;
+import io.github.idgibbo.utils.JavaUtils;
+import io.github.idgibbo.windows.PanelMain;
 
 public class ThreadReplaceCSV extends Thread{
 

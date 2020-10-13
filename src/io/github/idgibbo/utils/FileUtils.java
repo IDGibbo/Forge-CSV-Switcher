@@ -1,4 +1,4 @@
-package org.golde.java.rmwfcsvmg.utils;
+package io.github.idgibbo.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
