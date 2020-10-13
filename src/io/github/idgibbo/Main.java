@@ -27,8 +27,8 @@ public class Main {
 	
 	public static void main(String[] args) {
 
-		// Gives the default Windows theme TODO Fork
-		try { UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); }
+		// Gives the systems theme TODO Fork
+		try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); }
 		catch (Exception e) { e.printStackTrace(); }
 		
 		// Folder stuff

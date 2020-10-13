@@ -27,8 +27,8 @@ public class PanelConsole extends WindowAdapter implements WindowListener,  Acti
 
 	public PanelConsole()
 	{
-		// Gives the default Windows theme TODO Fork
-		try { UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); }
+		// Gives the systems theme TODO Fork
+		try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); }
 		catch (Exception e) { e.printStackTrace(); }
 
 		// create all components and add them
@@ -38,7 +38,7 @@ public class PanelConsole extends WindowAdapter implements WindowListener,  Acti
 		int y=(int)(frameSize.height/2);
 		frame.setBounds(x,y,frameSize.width,frameSize.height);
 		textArea=new JTextArea();
-		textArea.setEditable(true); // TODO Fork
+		textArea.setEditable(false);
 		
 		//auto scrolling
 		DefaultCaret caret = (DefaultCaret)textArea.getCaret();
