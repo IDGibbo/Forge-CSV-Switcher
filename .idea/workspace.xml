@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -17,16 +20,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/Fernflower.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
-    <configuration name="Start" type="JarApplication">
-      <option name="WORKING_DIRECTORY" value="C:\Users\Isaac's Surface Go\Documents\GitHub\ReplaceModsWithForgeCSVMappingsGUI" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration name="Start" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="io.github.idgibbo.Main" />
       <module name="ReplaceModsWithForgeCSVMappingsGUI" />
-      <method v="2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JarApplication">
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -50,13 +55,25 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="201" y="35" key="#Project_Structure/0.0.1440.920@0.0.1440.920" timestamp="1602582171341" />
-    <state x="175" y="115" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602582352244">
+    <state x="175" y="115" width="1089" height="761" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602589547812">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="175" y="115" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1602582352244" />
-    <state x="500" y="215" key="FileChooserDialogImpl" timestamp="1602582280207">
+    <state x="175" y="115" width="1089" height="761" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1602589547812" />
+    <state x="450" y="274" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1602589543314">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="500" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1602582280207" />
+    <state x="450" y="274" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.920@0.0.1440.920" timestamp="1602589543314" />
+    <state x="551" y="171" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1602589690727">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="551" y="171" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1440.920@0.0.1440.920" timestamp="1602589690727" />
+    <state x="500" y="215" key="FileChooserDialogImpl" timestamp="1602589689409">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="500" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1602589689409" />
+    <state x="201" y="35" key="SettingsEditor" timestamp="1602589694986">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="201" y="35" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1602589694986" />
   </component>
 </project>

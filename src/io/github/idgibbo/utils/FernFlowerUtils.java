@@ -1,8 +1,7 @@
 package io.github.idgibbo.utils;
 
-import java.io.File;
-
 import org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler;
+import java.io.File;
 
 public class FernFlowerUtils {
 

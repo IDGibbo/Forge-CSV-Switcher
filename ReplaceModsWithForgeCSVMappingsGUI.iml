@@ -18,7 +18,7 @@
     <orderEntry type="module-library">
       <library name="opencsv-3.9.jar">
         <CLASSES>
-          <root url="file://C:/Users/eric/eclipse-workspace/ReplaceModsWithForgeCSVMappingsGUI/lib/opencsv-3.9.jar" />
+          <root url="jar://$MODULE_DIR$/lib/opencsv-3.9.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -27,7 +27,7 @@
     <orderEntry type="module-library">
       <library name="Fernflower.jar">
         <CLASSES>
-          <root url="file://C:/Users/eric/eclipse-workspace/ReplaceModsWithForgeCSVMappingsGUI/lib/Fernflower.jar" />
+          <root url="jar://$MODULE_DIR$/lib/Fernflower.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
