@@ -125,9 +125,9 @@ public class PanelMain extends JPanel{
 		});
 		btnSelectMod.setBounds(195, 48, 97, 25);
 		add(btnSelectMod);
-		
+
 		progressBar = new JProgressBar();
-		progressBar.setBounds(3, 216, 376, 14);
+		progressBar.setBounds(3, 216, 376, 14); // TODO Fork
 		add(progressBar);
 
 	}

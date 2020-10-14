@@ -7,10 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowListener;
-import java.io.IOException;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
-import java.io.PrintStream;
+import java.io.*;
 
 public class PanelConsole extends WindowAdapter implements WindowListener,  ActionListener, Runnable
 {
@@ -24,6 +21,35 @@ public class PanelConsole extends WindowAdapter implements WindowListener,  Acti
 	private final PipedInputStream pin2=new PipedInputStream();
 	
 	private boolean showing = false;
+
+	// TODO Fork (Save Console function)
+	final JFileChooser fc = new JFileChooser();
+	public void saveConsole() {
+
+		final JFileChooser SaveConsole = new JFileChooser();
+		SaveConsole.setApproveButtonText("Save");
+		int actionDialog = SaveConsole.showOpenDialog(frame);
+		if (actionDialog != JFileChooser.APPROVE_OPTION) {
+			return;
+		}
+
+		File fileName = new File(SaveConsole.getSelectedFile() + ".txt");
+		BufferedWriter outFile = null;
+		try {
+			outFile = new BufferedWriter(new FileWriter(fileName));
+
+			textArea.write(outFile);
+
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		} finally {
+			if (outFile != null) {
+				try {
+					outFile.close();
+				} catch (IOException e) { }
+			}
+		}
+	}
 
 	public PanelConsole()
 	{
@@ -45,15 +71,17 @@ public class PanelConsole extends WindowAdapter implements WindowListener,  Acti
 		DefaultCaret caret = (DefaultCaret)textArea.getCaret();
 		caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 		
-		JButton button=new JButton("Clear Console"); // TODO Fork
+		JButton clearConsole=new JButton("Clear Console"); // TODO Fork
+		JButton saveConsole=new JButton(new AbstractAction("<html><center>Save<br />CNSL</html>") { @Override public void actionPerformed(ActionEvent arg0) { saveConsole();}}); // TODO Fork (Save button)
 
 		frame.getContentPane().setLayout(new BorderLayout());
 		frame.getContentPane().add(new JScrollPane(textArea),BorderLayout.CENTER);
-		frame.getContentPane().add(button,BorderLayout.SOUTH);
+		frame.getContentPane().add(saveConsole ,BorderLayout.EAST); // TODO Fork (Save button)
+		frame.getContentPane().add(clearConsole ,BorderLayout.SOUTH);
 		frame.setVisible(showing);
 
 		frame.addWindowListener(this);
-		button.addActionListener(this);
+		clearConsole.addActionListener(this);
 
 		try
 		{
@@ -92,8 +120,6 @@ public class PanelConsole extends WindowAdapter implements WindowListener,  Acti
 		reader2=new Thread(this);
 		reader2.setDaemon(true);
 		reader2.start();
-
-		
 	}
 	
 	public void quit() {
